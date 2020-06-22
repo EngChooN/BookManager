@@ -52,10 +52,15 @@ public class MemberService {
 	
 	public boolean authAdmin(HttpServletRequest request) {
 		HttpSession session = request.getSession();
-		String mid = (String)session.getAttribute("mid");
-		if(mid.equals("root")) {
-			return true;
-		}else {
+		try {
+			
+			String mid = (String)session.getAttribute("mid");
+			if(mid.equals("root")) {
+				return true;
+			}else {
+				return false;
+			}
+		}catch(Exception e) {
 			return false;
 		}
 	}
