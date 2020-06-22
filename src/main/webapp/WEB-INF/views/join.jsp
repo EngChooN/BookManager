@@ -26,7 +26,7 @@
 		<div class="d-flex justify-content-center h-100">
 			<div class="card">
 				<div class="card-header">
-					<h3>Sign Up</h3>
+					<h3>Sign Up!</h3>
 				</div>
 				<div class="card-body">
 					<form name="join" action="joinAction" method="post" onsubmit="return validate()">
